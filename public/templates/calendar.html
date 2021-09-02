@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendar</title>
+        <link rel="stylesheet" href="../external/normalize.css">
+        <link rel="stylesheet" href="../css/utils.css">
+        <link rel="stylesheet" href="../css/nav.css">
+        <link rel="stylesheet" href="../css/pages/calendar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    </head>
+    <body>
+        <nav class="navbar">
+            <h2 class="hidden">My Meetings</h2>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <button class="menu-toggler">&#9776;</button>
+            </label>
+            <div class="container d-flex hide-sm main-menu-links">
+                <ul class="nav nav-left d-flex list-unstyled">
+                    <li><a href="../templates/calendar.html" class="active">Calendar</a></li>
+                    <li><a href="../templates/meetings.html" class="hiding-items">Meetings</a></li>
+                    <li><a href="../templates/teams.html" class="hiding-items">Teams</a></li>
+                </ul>
+                <ul class="nav nav-right d-flex list-unstyled">
+                    <li>Hi <a href="../templates/calendar.html">abc@gmail.com</a>!</li>
+                    <li><a href="../index.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--Header-->
+        <head>
+            <div class="header">
+            <h1>Calendar</h1>
+            <hr>
+            <div class="date-and-day d-flex">
+                <div class="date-container">
+                    <p id=date>
+                    <strong>
+                    <script>
+                        document.write(new Date().toLocaleDateString());
+                    </script>
+                    </strong>
+                    </p>
+                </div>
+                <div class="calendar-widget">
+                    <form action=""method="Post" name="calendar-wid1">
+                        <input type="date" name="calendar-widget" value="">
+                    </form>
+                </div>
+                <button class="calendar-wid2"><i class="fa fa-calendar" aria-hidden="true" onclick="">
+                </i></button>
+            </div>
+            <div class="day-container d-flex">
+                <p id=day><strong> Sunday </strong></p>
+            </div> 
+        </div>
+        </head>   
+        <main>
+            <div class="calendar">
+                <div class="calendar-hours">
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">00</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+                    
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">01</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">02</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">03</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">04
+                            </div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">05</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">06</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">07</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+                    
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">08</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">09</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">10</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">11
+                            </div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">12</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">13</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">14</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+                    
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">15</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">16</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">17</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">18
+                            </div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">19</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">20</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">21</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+                    
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">22</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                    <div class="calendar-hour">
+                        <div class="event-left">
+                            <div class="hour">23</div>
+                        </div>
+                        <div class="event-right"></div>
+                    </div>
+
+                </div>
+    
+                <div class="calendar-meetings">
+                    <div class="calendar-meeting1" data-start-time="6:00" data-end-time="7:00">
+                    <label class="meeting-title">Project kickoff</label>
+                    <label class="meeting-descr">Attendees:mark@exaple.com,
+                        jane@exaple.com</label>
+                </div>
+                <div class="calendar-meeting2" data-start-time="9:10" data-end-time="10:20">
+                    <label class="meeting-title">AWS architecture</label>
+                    <label class="meeting-descr">Attendees:john@exaple.com,
+                        jane@exaple.com</label>
+                </div>
+            </div>
+            </div>
+        </main>
+        <script src="../js/pages/nav.js"></script>
+    </body>
+</html>

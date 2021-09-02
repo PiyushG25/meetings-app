@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendar</title>
+        <link rel="stylesheet" href="../external/normalize.css">
+        <link rel="stylesheet" href="../css/utils.css">
+        <link rel="stylesheet" href="../css/nav.css">
+        <link rel="stylesheet" href="../css/pages/calendar.css">
+        <link rel="stylesheet" href="../css/pages/teams.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <nav class="navbar">
+            <h2 class="hidden">My Meetings</h2>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <button class="menu-toggler">&#9776;</button>
+            </label>
+            <div class="container d-flex hide-sm main-menu-links">
+                <ul class="nav nav-left d-flex list-unstyled">
+                    <li><a href="../templates/calendar.html" class="hiding-items">Calendar</a></li>
+                    <li><a href="../templates/meetings.html" class="hiding-items">Meetings</a></li>
+                    <li><a href="../templates/teams.html" class="active">Teams</a></li>
+                </ul>
+                <ul class="nav nav-right d-flex list-unstyled">
+                    <li>Hi <a href="../templates/calendar.html">abc@gmail.com</a>!</li>
+                    <li><a href="../index.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--Header-->
+        <head>
+            <div  class="header">
+            <h1>Teams</h1>
+            <hr>
+            <label>View and edit teams you are part of</label>
+            <div class="teams-list">
+                <div class="teams-list-items">
+                <h3>Customer acquisition campaign</h3>
+                <h5>@customer-acquisition</h5>
+                <label>Team to come up with strategies to win over customers by end of FY21</label>
+                <br><br>
+                <button class="btn-danger">Execute Yourself</button>
+                <hr>
+                <div class="members">
+                <h4>Members:</h4> 
+                <h5>john@example.com, jane@example.com</h5>
+                </div>
+                <select>
+                    <option selected hidden>Select members</option>
+                    <option>john@example.com</option>
+                    <option>jane@example.com</option>
+                    <option>johny@example.com</option>
+                    <option>jenny@example.com</option>
+                </select>
+                <button class="add-btn">Add</button>
+            </div>
+
+            <div class="teams-list-items">
+                <h3>MERN stack training</h3>
+                <h5>@mern-stack-training</h5> 
+                <label>Group attending MERN stack training for website revamp project</label>
+                <br><br>
+                <button class="btn-danger">Execute Yourself</button>
+                <hr>
+                <div class="members">
+                <h4>Members:</h4> 
+                <h5>john@example.com, jane@example.com</h5>
+                </div>
+                <select>
+                    <option selected hidden>Select members</option>
+                    <option>john@example.com</option>
+                    <option>jane@example.com</option>
+                    <option>johny@example.com</option>
+                    <option>jenny@example.com</option>
+                </select>
+                <button class="add-btn">Add</button>
+            </div>
+
+            <!-- Trigger/Open The Modal -->
+            <div id="myBtn" class="teams-list-items">
+                <a href="#" class="add-new-team">+</a>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Add New Team</h2>
+              </div>
+              <div class="modal-body">
+                <form action="teams.html" method="" enctype="multipart/form-data">
+                    <input 
+                    type="text",
+                    name="Team Title"
+                    placeholder="Title of the Team"/><br>
+                    <input
+                    type="keyword",
+                    name="keyword-to-search",
+                    placeholder="@keyword"
+                    /><br>
+                    <input
+                    type="text",
+                    name="team-description"
+                    placeholder="team-description" 
+                    /><br>
+                    <label>Team Members</label><br>
+                    <select>
+                        <option selected hidden>Select Team members</option>
+                        <option>john@example.com</option>
+                        <option>jane@example.com</option>
+                        <option>johny@example.com</option>
+                        <option>jenny@example.com</option>
+                    </select>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button class="add-btn1"><a href="teams.html">Add</a></button>
+              </div>
+            </div>
+          
+          </div>
+          
+
+        </div>
+        </div>
+        </head>   
+
+
+        
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+            modal.style.display = "none";
+            }
+            }
+            </script>
+
+
+        <script src="../js/pages/nav.js"></script>        
+    </body>
+</html>

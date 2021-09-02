@@ -1,0 +1,39 @@
+label, textarea{
+    margin-left: 0.5em;
+    margin-right: 1em;
+}
+
+.calendar-widget1 [name=calendar-widget] {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    display: flex;
+    width: 95%; /*97*/
+}
+
+.time-container{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    display: flex;
+}
+
+#sub-label{
+    margin-left: 1em;
+    margin-right: 0.5em;
+    font-size: smaller;
+    color: white;
+}
+
+.add-btn{
+    margin-left: 1em;
+    margin-right: 0.5em;
+    padding: 0.5em;
+    font-size: small;
+    background-color:rgba(0, 0, 0, 0.3);
+    color: white;
+    border:thin;
+
+}
+
+

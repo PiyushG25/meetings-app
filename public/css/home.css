@@ -1,0 +1,199 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    overflow: hidden;
+}
+
+section
+{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* background blue circle color*/
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+/* background 1st blue circle color*/
+section .color:nth-child(1)
+{
+    top: -30%;
+    left: -5%;
+    width: 45%;
+    height: 80%;
+    background:#00d2ff;
+    border-radius: 50%;
+}
+
+/* background 2nd blue circle color*/
+section .color:nth-child(2)
+{
+    bottom: -30%;
+    right: -5%;
+    width: 45%;
+    height: 80%;
+    background:#00d2ff;
+    border-radius: 50%;
+}
+
+/*Login Box*/
+.login-box
+{
+    position: relative;
+}
+
+/*animated sqaures Layout CSS*/
+.login-box .anime-square
+{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.3);
+    border:1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    animation: animate 10s linear infinite; /*animation*/
+    animation-delay: calc(-1s * var(--i)); /*animation*/
+}
+
+@keyframes animate /*animation*/
+{
+    0%, 100%
+    {
+        transform: translateY(-40px); /*animation*/
+    }
+    50%
+    {
+        transform: translateY(40px); /*animation*/
+    }
+}
+/*Animated Square Positioning*/
+.login-box .anime-square:nth-child(1) /*back*/
+{
+    top: -50px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+}
+
+.login-box .anime-square:nth-child(2)
+{
+    top: 150px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    z-index: 2; /*front*/
+}
+
+.login-box .anime-square:nth-child(3)
+{
+    bottom: 50px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    z-index: 2; /*front*/
+}
+
+.login-box .anime-square:nth-child(4) /*back*/
+{
+    bottom: -80px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.login-box .anime-square:nth-child(5) /*back*/
+{
+    top: -80px;
+    left: 140px;
+    width: 60px;
+    height: 60px;
+}
+
+/*LOGIN BOX Layout CSS*/
+.container
+{
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.3);
+    border:1px solid rgba(255, 255, 255, 0.7);
+}
+
+.login-form
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.login-form h1
+{
+    position: relative;
+    color:black;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;   
+}
+
+.login-form .inputBox
+{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login-form .inputBox input
+{
+    width: 100%;
+    background: rgba(255,255,255,0.3);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color:black;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.login-form .inputBox input::placeholder
+{
+    color: black;
+}
+
+.login-form .inputBox input[name="login"]
+{
+    color: black;
+    max-width: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.forget, .signup
+{
+    margin-top: 5px;
+    color: black;
+}
+
+.forget a,
+.signup a
+{
+    color: black;
+    font-weight: 550;
+    text-decoration: none;
+}

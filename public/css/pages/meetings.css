@@ -1,0 +1,164 @@
+.header
+{
+    margin-left: 2em ;
+    margin-right: 1em;
+}
+/*sub-headings*/
+.sub-headings-container{
+    margin: 0 1em 1em 2em;
+    *margin-left: 2em ;
+    *margin-right: 1em;
+    display:flex;
+    justify-content: flex-start;
+    width: 96%;
+    border-bottom: 1px solid black;
+
+}
+
+.sub-headings-container .active{
+    color: black;
+    border: 1px solid gray;
+    border-bottom: white;
+    padding-bottom: 0.3em;
+}
+
+.sub-headings-container a{
+    margin-top: 0.5em;
+    padding: 0.5em 1em 0 1em;
+    *padding-top: 0.5em;
+    margin-right: 0.5em;
+    text-align: center;
+    margin-left:1% ;
+    width: 20%;
+    color:cornflowerblue;
+    text-decoration: none; 
+    border-bottom: 1px solid white;
+    z-index: 1;
+}
+
+/*search form*/
+.search-form{
+    padding-top: 0.5em;
+    padding-bottom: 0.8em;
+    margin-left: 2em ;
+    margin-right: 1em;
+    padding-left: 0.5em;
+    background-color:rgb(26, 203, 219);
+}
+
+.dropdown-list{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 95%; /*97*/
+    border-radius: 5px;
+}
+.dropdown-list option{
+    background-color: rgba(13, 191, 207, 0.1);
+}
+
+.search-form textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 95%; /*97*/
+    border-radius: 5px;
+}
+
+.search-form .search-btn{
+    background-color:rgba(0, 0, 0, 0.1);
+    color: white;
+    border: 0.5px, solid lightgray;
+}
+.search-form label:nth-child(1){
+    font-weight: bold;
+    color: white;
+}
+
+/*meetings section*/
+.meetings-list{
+ margin-left: 2em;
+ margin-right: 1em;
+ margin-top: 1em;
+ margin-bottom: 1em;
+}
+
+.meeting1, .meeting2{
+padding:1em ;
+border: 1px solid lightgray;
+margin-bottom: 1em;
+}
+
+.meeting1 hr, .meeting2 hr{
+    border:1px solid lightgray;
+}
+
+.meeting1 label:nth-child(1){
+    font-size: medium;
+    display: inline-block;
+}
+
+.meeting1 label:nth-child(2){
+    font-size: small;
+    display: inline-block;
+}
+.project-title{
+    margin-left: 2.5em;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: block;
+    font-size: small;
+}
+
+.btn-danger{
+    margin-left: 2em;
+    margin-right: 1em;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 0.3em ;
+    font-size: small;
+}
+
+.attendees1
+{
+    font-size: small;
+    margin-right: 0.1em;
+}
+
+.attendees2{
+    font-size: smaller;
+}
+.attendees-title, .label1{
+    margin-left: 2em;
+    margin-right: 1em;
+}
+.attendees-list{
+    display: inline-block;
+    margin-left: 2em;
+    margin-right: 1em;
+    margin-top: 0.7em;
+    font-size: small;
+}
+
+.btn-primary{
+    font-size: small;
+    background-color:rgb(13, 191, 207);
+    color: white;
+    border:thin;
+}
+
+/*media*/
+@media(max-width:800px)
+{   
+    .sub-headings-container{
+        flex-basis: 100%;
+        justify-content: space-around;
+        margin-left: 1em;
+        margin-right: 0.5em;
+    }
+    .sub-headings-container a{
+        width:45%;
+        font-size: smaller;
+}
+}

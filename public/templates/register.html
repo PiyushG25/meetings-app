@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meetings App</title>
+        <link rel="stylesheet" href="../external/normalize.css">
+        <link rel="stylesheet" href="../css/utils.css">
+        <link rel="stylesheet" href="../css/pages/register.css">
+    </head>
+    <body>
+        <main>
+            <section class="d-flex">
+                <!--Background color-->
+                <div class="color"></div>
+                <div class="color"></div>
+                <!--Login Form-->
+                <div class="register-box">
+                    <div class="rcontainer">
+                        <div class="register-form">
+                            <h1>Meetings-App</h1>
+                            <form  name="register-form" action="../index.html" method="GET" enctype="multipart/form-data">
+                                <div class="inputBox">
+                                    <input 
+                                    type="email"
+                                    name="email-ID-of user"
+                                    id="email-id"
+                                    placeholder="Email-ID"
+                                    required
+                                    />
+                                </div>
+                                <div class="inputBox">
+                                    <input 
+                                    type="password"
+                                    name="Password"
+                                    id="password-of-user"
+                                    placeholder="Password"
+                                    required
+                                    />
+                                </div>
+                                <div class="inputBox">
+                                    <input 
+                                    type="password"
+                                    name="Confirm-Password"
+                                    id="confirm-password-of-user"
+                                    placeholder="Confirm-Password"
+                                    required
+                                    />
+                                </div>
+                                <div class="inputBox">
+                                    <input
+                                        type="submit"
+                                        name="signup"
+                                        value="signup"
+                                    />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

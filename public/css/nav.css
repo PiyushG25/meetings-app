@@ -1,0 +1,115 @@
+.navbar {
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2.5em;
+    background-color:rgb(236, 236, 236);
+    width: 100%;
+}
+
+.nav li {
+    margin-right: 2em;
+}
+
+.nav a {
+    text-decoration: none;
+    color: gray;
+}
+
+.nav .active {
+    color:black;
+    font-weight: 700;
+    background-color: lightgray;
+    padding: 1em;
+}
+
+.list-unstyled {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+
+.checkbtn
+{
+    font-size: 20px;
+    color: gray;
+    float: right;
+    line-height: 1em;
+    cursor: pointer;
+    display: none;
+}
+
+.hidden
+{
+    display: none;
+}
+
+#check
+{
+    display: none;
+}
+
+.hide-sm{
+    display: flex;
+}
+
+@media(max-width:800px)
+{
+    .navbar{
+        height: 3em;
+    }
+    #check{
+        padding-top: 0;
+    }
+
+    .hidden
+    {
+        display: inline-block;
+        font-size:0.7em;
+    }
+    .checkbtn{
+        display:block;
+    }
+    .hide-sm{
+        display: block;
+    }
+
+    .hide-sm{
+        display: none;;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        padding-top: 2em;
+        width: 100%;
+        height: 50vh;
+        background-color:rgb(236, 236, 236);
+        top: 47px;
+        left: 0;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+    }
+    .container .nav li{
+        position:relative;
+        display: block;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .nav-right{
+        padding-top: 0;
+        top: 14.5em;
+
+    }
+
+    .navbar .nav li a{
+        font-size: 20px;
+    }
+
+}

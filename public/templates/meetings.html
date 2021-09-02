@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendar</title>
+        <link rel="stylesheet" href="../external/normalize.css">
+        <link rel="stylesheet" href="../css/utils.css">
+        <link rel="stylesheet" href="../css/nav.css">
+        <link rel="stylesheet" href="../css/pages/meetings.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <nav class="navbar">
+            <h2 class="hidden">My Meetings</h2>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <button class="menu-toggler">&#9776;</button>
+            </label>
+            <div class="container d-flex hide-sm main-menu-links">
+                <ul class="nav nav-left d-flex list-unstyled">
+                    <li><a href="../templates/calendar.html" class="hiding-items">Calendar</a></li>
+                    <li><a href="../templates/meetings.html" class="active">Meetings</a></li>
+                    <li><a href="../templates/teams.html" class="hiding-items">Teams</a></li>
+                </ul>
+                <ul class="nav nav-right d-flex list-unstyled">
+                    <li>Hi <a href="../templates/calendar.html">abc@gmail.com</a>!</li>
+                    <li><a href="../index.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--Header-->
+        <head>
+            <div class="header">
+                <h1>Meetings</h1>
+                <hr>
+            </div>
+        </head>   
+        <div class="sub-headings-container">
+            <a href="#" class="active">Filter/Search meetings</a>
+            <a href="../templates/meetings2.html">Add a meeting</a>
+        </div>
+        
+        <main>
+            <div class="main-container">
+            <section class="search-form">
+                <form action="" method="GET" enctype="multipart/form-data">
+                    <label>Search for meetings</label>
+                    <hr>
+                    <label>Date</label><br>
+                    <select class="dropdown-list">
+                        <option selected >ALL</option>
+                        <option>PAST</option>
+                        <option>TODAY</option>
+                        <option>UPCOMING</option>
+                    </select><br>
+                    <label>Search for</label><br>
+                    <textarea rows="2" placeholder="Search using words which describes meeting"></textarea><br>
+                    <button class="search-btn">Search</button>
+                </form>
+
+            </section>
+            <section class="meetings-list">
+                <div class="meetings-details-container">
+                    <label><strong>Meetings matching search criteria</strong></label>
+                    <hr>
+                    <div class="meeting1">
+                        <div class="label1">
+                        <label><strong>12 September 2020</strong></label>
+                        <label><strong>06:00-07:00</strong></label><br>
+                        </div>
+                        <label class="project-title"><strong>Project kickoff</strong></label>
+                        <button class="btn-danger"><strong>Excuse yourself</strong></button>
+                        <hr>
+                        <div class="attendees-title">
+                        <label class="attendees1"><strong>Attendees:</strong></label>
+                        <label class="attendees2"><strong>mark@example.com, jane@example.com</strong></label><br>
+                        </div>
+                        <select class="attendees-list">
+                            <option selected>Select member</option>
+                            <option >mark@example.com</option>
+                            <option>jane@example.com</option>
+                        </select>
+                        <button class="btn-primary"><strong>Add</strong></button>
+                    </div>
+                    <div class="meeting1">
+                        <div class="label1">
+                        <label><strong>12 September 2020</strong></label>
+                        <label><strong>09:00-10:30</strong></label><br>
+                        </div>
+                        <label class="project-title"><strong>AWS architecture</strong></label>
+                        <button class="btn-danger"><strong>Excuse yourself</strong></button>
+                        <hr>
+                        <div class="attendees-title">
+                        <label class="attendees1"><strong>Attendees:</strong></label>
+                        <label class="attendees2"><strong>mark@example.com, jane@example.com</strong></label><br>
+                        </div>
+                        <select class="attendees-list">
+                            <option selected>Select member</option>
+                            <option >mark@example.com</option>
+                            <option>jane@example.com</option>
+                        </select>
+                        <button class="btn-primary"><strong>Add</strong></button>
+                    </div>
+                    </div>
+
+            </section>
+            </div>
+
+        </main>
+
+        <script src="../js/pages/nav.js"></script>        
+    </body>
+</html>
